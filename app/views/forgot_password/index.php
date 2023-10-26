@@ -25,7 +25,7 @@
                         <label for="email" class="text-xl lg:text-2xl block mb-2">
                             Email Address
                         </label>
-                        <input type="email" name="kata_sandi" class="py-2 text-xl w-full rounded-xl bg-slate-200">
+                        <input type="email" name="email" class="py-2 text-xl w-full rounded-xl bg-slate-200">
                         <button type="submit" name="change"
                             class="mt-7 w-full py-1 bg-blue-400 text-white rounded-lg text-2xl lg:text-3xl">RESET PASSWORD</button>
                     </div>
