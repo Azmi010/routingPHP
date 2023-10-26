@@ -13,31 +13,26 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#hero" class="font-bold text-lg text-primary block py-6">
+                <a href="../../views/home" class="font-bold text-lg text-primary block py-6">
                         <img src="../../../public/img/logo.png" width="50" alt="">
                     </a>
                 </div>
                 <div class="flex items-center p-4">
-                    <nav id="nav-menu"
-                        class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-secondary lg:dark:bg-transparent">
+                    <nav id="nav-menu" class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-secondary lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#hero"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
+                                <a href="#hero" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About
                                     us</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Our
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Our
                                     Program</a>
                             </li>
                             <li class="group">
-                                <a href="#technologies"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact
+                                <a href="#technologies" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact
                                     us</a>
                             </li>
                         </ul>
@@ -45,16 +40,12 @@
                 </div>
                 <div class="flex items-center justify-center">
                     <div class="inline-block">
-                        <a href="../signup/index.php"
-                            class="me-2 text-sm font-semibold border-primary border-2 bg-white text-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out inline-block"
-                            target="">Sign up</a>
+                        <a href="../signup/index.php" class="me-2 text-sm font-semibold border-primary border-2 bg-white text-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out inline-block" target="">Sign up</a>
                     </div>
                     <div class="ms-2 me-2 inline-block">
-                        <a href="../login/index.php"
-                            class="text-sm font-semibold text-white bg-primary py-2
+                        <a href="../login/index.php" class="text-sm font-semibold text-white bg-primary py-2
                          px-5
-                         rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out inline-block"
-                            target="">Sign in</a>
+                         rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out inline-block" target="">Sign in</a>
                     </div>
                     <button id="hamburger" name="hamburger" type="button" class="ms-2 inline-block lg:hidden">
                         <span class="hamburger-line origin-top-right transition duration-300 ease-in-out"></span>
@@ -79,9 +70,7 @@
                 <div class="md:text-base sm:text-sm mt-3 md:mt-5 mb-3 md:mb-5">
                     <p>Providing special coding training for children in various languages and monitoring learning progress for each material</p>
                 </div>
-                <a href=""
-                    class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                    target="_blank">Get Started</a>
+                <a href="" class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out" target="_blank">Get Started</a>
             </div>
             <div class="bg-blue-500 w-3/12 h-[55%] hidden xl:h-[80%] lg:block absolute top-24 right-10"></div>
             <img src="../../../public/img/happy.jpg" alt="" class="hidden lg:block w-5/12 z-10">
@@ -107,16 +96,15 @@
                             concepts through quizzes, learning videos, and interesting projects. With full guidance and
                             support, children can develop technical skills, problem solving and creativity through
                             interesting and fun learning experiences.</p>
-                        </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
+            </div>
+            <div class="flex justify-center">
 
-                    <button type="button"
-                        class="block text-sky-600 mb-6 mt-2 font-bold cursor-pointer hover:text-sky-500">View
-                        More
-                    </button>
-                </div>
+                <button type="button" class="block text-sky-600 mb-6 mt-2 font-bold cursor-pointer hover:text-sky-500">View
+                    More
+                </button>
+            </div>
         </div>
     </section>
     <!-- DESCRIPTION END -->
@@ -197,14 +185,13 @@
         <div class="container">
             <div class="flex flex-wrap justify-between pt-8">
                 <div class="w-full px-4 mb-8 md:w-2/6">
-                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="./dist/img/logo hitam.png" alt=""
-                            width="50">ProKidz</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae.</p>
+                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="../../../public/img/logo.png" alt="" width="50"></span>
+                    <p>Providing special coding training for children in various languages and monitoring learning progress for each material</p>
                 </div>
                 <div class="w-full mb-12 px-4 md:w-1/6">
                     <ul>
-                        <li>FAQ</li>
-                        <li>Panduan</li>
+                        <li><a href="../../views/faq" style="text-decoration: underline; ">FAQ</a></li>
+                        <li><a href="../../views/panduan" style="text-decoration: underline;">Panduan</a></li>
                         <li>+0913-705-3875</li>
                         <li>Email.com</li>
                         <li>Instagram</li>

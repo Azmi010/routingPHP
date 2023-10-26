@@ -13,7 +13,7 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#hero" class="font-bold text-lg text-primary block py-6">
+                    <a href="../../views/home" class="font-bold text-lg text-primary block py-6">
                         <img src="../../../public/img/logo.png" width="50" alt="">
                     </a>
                 </div>
@@ -43,28 +43,36 @@
         <h1 class="font-bold text-4xl md:text-6xl">How to use <span class="text-red-500">ProKidz?</span></h1>
         <ul>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan1.png" width="50" alt=""><p class="md:text-xl ms-4">Press the signup button register an account if you don't have an account yet</p>
+                <img src="../../../public/img/panduan1.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Press the signup button register an account if you don't have an account yet</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan2.png" width="50" alt=""><p class="md:text-xl ms-4">Login to enter the registered account</p>
+                <img src="../../../public/img/panduan2.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Login to enter the registered account</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan3.png" width="50" alt=""><p class="md:text-xl ms-4">Choose the course programs you want to start studying</p>
+                <img src="../../../public/img/panduan3.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Choose the course programs you want to start studying</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan4.png" width="50" alt=""><p class="md:text-xl ms-4">Take the pre-test before starting to study</p>
+                <img src="../../../public/img/panduan4.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Take the pre-test before starting to study</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan5.png" width="50" alt=""><p class="md:text-xl ms-4">Watch learning videos</p>
+                <img src="../../../public/img/panduan5.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Watch learning videos</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan6.png" width="50" alt=""><p class="md:text-xl ms-4">Do the post test quiz after watching the lesson</p>
+                <img src="../../../public/img/panduan6.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Do the post test quiz after watching the lesson</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan7.png" width="50" alt=""><p class="md:text-xl ms-4">Monitoring progress to see how far you have learned</p>
+                <img src="../../../public/img/panduan7.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Monitoring progress to see how far you have learned</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../../public/img/panduan8.png" width="50" alt=""><p class="md:text-xl ms-4">Download the certificate after all learning is complete</p>
+                <img src="../../../public/img/panduan8.png" width="50" alt="">
+                <p class="md:text-xl ms-4">Download the certificate after all learning is complete</p>
             </li>
         </ul>
     </section>
@@ -81,7 +89,7 @@
                     <div class="py-8 px-6">
                         <h3 class=" font-semibold text-md">Quiz
                         </h3>
-                        <p class="text-sm">Take quizzes before and after training</p>
+                        <p class="text-sm">Take quiz before and after training</p>
                     </div>
                 </div>
             </div>
@@ -111,16 +119,16 @@
 
     <!-- SUBSCRIBE CARD START -->
     <section id="subscribe" class="flex justify-center py-14">
-        <form action="../../database/database.php" method="post">
-            <div class="w-10/12 bg-blue-400 text-center rounded-2xl py-14 px-5">
+        <div class="w-10/12 bg-blue-400 text-center rounded-2xl py-14 px-5">
+            <form action="../../database/database.php" method="post">
                 <p class="text-white text-base md:text-3xl mb-4">Contact Me</p>
                 <input type="email" name="email" class="py-2 md:py-4 w-3/5 rounded-full mb-5" placeholder="      Email Address">
                 <div class="email">
                     <input type="text" name="message" class="py-2 md:py-4 w-2/5 rounded-l-full" placeholder="       Message">
                     <button type="submit" name="send2" class="bg-orange-400 py-2 md:py-4 w-1/5 rounded-r-full">Send</button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
     <!-- SUBSCRIBE CARD START -->
 
@@ -129,14 +137,13 @@
         <div class="container">
             <div class="flex flex-wrap justify-between pt-8">
                 <div class="w-full px-4 mb-8 md:w-2/6">
-                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="./dist/logo hitam.png"
-                            alt="" width="50">ProKidz</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae.</p>
+                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="../../../public/img/logo.png" alt="" width="50"></span>
+                    <p>Providing special coding training for children in various languages and monitoring learning progress for each material</p>
                 </div>
                 <div class="w-full mb-12 px-4 md:w-1/6">
                     <ul>
-                        <li><a href="../faq/index.php">FAQ</a></li>
-                        <li>Panduan</li>
+                        <li><a href="../../views/faq" style="text-decoration: underline; ">FAQ</a></li>
+                        <li><a href="../../views/panduan" style="text-decoration: underline;">Panduan</a></li>
                         <li>+0913-705-3875</li>
                         <li>Email.com</li>
                         <li>Instagram</li>

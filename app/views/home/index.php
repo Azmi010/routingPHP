@@ -24,35 +24,9 @@ if (!isset($_SESSION["user"])) {
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#hero" class="font-bold text-lg text-primary block py-6">
+                <a href="../../views/home" class="font-bold text-lg text-primary block py-6">
                         <img src="../../../public/img/logo.png" width="50" alt="">
                     </a>
-                </div>
-                <div class="items-center p-4 hidden lg:flex">
-                    <nav id="nav-menu"
-                        class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-secondary lg:dark:bg-transparent">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="#hero"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
-                            </li>
-                            <li class="group">
-                                <a href="#about"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About
-                                    us</a>
-                            </li>
-                            <li class="group">
-                                <a href="#portfolio"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Our
-                                    Program</a>
-                            </li>
-                            <li class="group">
-                                <a href="#technologies"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact
-                                    us</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
                 <div class="profile">
                     <img class="inline-block" src="../../../public/img/user.png" width="36" alt="">
@@ -111,6 +85,8 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
                     <img src="../../../public/img/Java.jpeg" class="p-5" alt="">
                     <div class="px-6">
@@ -128,6 +104,8 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
                     <img src="../../../public/img/CPP.jpeg" class="p-5" alt="">
                     <div class="px-6">
@@ -145,6 +123,8 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
                     <img src="../../../public/img/PHP.jpeg" class="p-5" alt="">
                     <div class="px-6">
@@ -162,6 +142,8 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
                     <img src="../../../public/img/CS.jpeg" class="p-5" alt="">
                     <div class="px-6">
@@ -190,14 +172,14 @@ if (!isset($_SESSION["user"])) {
         <div class="container">
             <div class="flex flex-wrap justify-between pt-8">
                 <div class="w-full px-4 mb-8 md:w-2/6">
-                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="./dist/logo hitam.png"
-                            alt="" width="50">ProKidz</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae.</p>
+                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="../../../public/img/logo.png"
+                            alt="" width="50"></span>
+                    <p>Providing special coding training for children in various languages and monitoring learning progress for each material</p>
                 </div>
                 <div class="w-full mb-12 px-4 md:w-1/6">
                     <ul>
-                        <li>FAQ</li>
-                        <li>Panduan</li>
+                        <li><a href="../../views/faq" style="text-decoration: underline; ">FAQ</a></li>
+                        <li><a href="../../views/panduan" style="text-decoration: underline;">Panduan</a></li>
                         <li>+0913-705-3875</li>
                         <li>Email.com</li>
                         <li>Instagram</li>
@@ -206,6 +188,19 @@ if (!isset($_SESSION["user"])) {
             </div>
         </div>
     </footer>
+    <div class="modal-box hidden bg-slate-100 border-[1px] border-black w-96 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-2xl z-20">
+        <div class="p-4">
+            <h1 class="text-center font-bold text-xl">Change Profile</h1>
+            <input type="text" placeholder="Enter new username..." class="py-2 ps-4 text-xl w-full rounded-xl bg-slate-200 block mt-5">
+            <input type="password" placeholder="Enter new password..." class="py-2 ps-4 text-xl w-full rounded-xl bg-slate-200 block mt-5 mb-5">
+        </div>
+        <hr>
+        <div class="flex justify-center">
+            <button class="p-4 text-blue-500 text-center">
+                SAVE CHANGES
+            </button>
+        </div>
+    </div>
     <script src="./script.js"></script>
     <!-- FOOTER END -->
 </body>
