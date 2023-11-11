@@ -49,6 +49,13 @@ function sendmessage($conn, $email, $message) {
   return $hasil;
 }
 
+function changeprofil($conn, $username, $password) {
+  $query = "UPDATE account SET password = '$password', username = '$username' LIMIT 1";
+  $result = mysqli_query($conn, $query);
+
+  return $result;
+}
+
 function reset_password($get_name, $get_email, $token) {
   $mail = new PHPMailer(true);
 
@@ -201,6 +208,20 @@ if (isset($_POST['change'])) {
     header("Location: ../views/forgot_password/index.php");
     exit(0);
   }
+}
+
+if (isset($_POST['profil'])) {
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  $result = changeprofil($conn, $username, $password);
+  if ($result) {
+    $_SESSION["user"]["username"] = $username;
+    header("Location: ../views/home/index.php");
+  } else {
+    header("Location: ../views/login/index.php");
+  }
+
 }
 
 ?>

@@ -28,11 +28,11 @@ if (!isset($_SESSION["user"])) {
                         <img src="../../../public/img/logo.png" width="50" alt="">
                     </a>
                 </div>
-                <div class="profile">
+                <div class="profile" id="profil1" onclick="showDiv('profil2')">
                     <img class="inline-block" src="../../../public/img/user.png" width="36" alt="">
                     <p class="inline-block ms-2">
                         <?=
-                         $_SESSION["user"]["username"]
+                         $_SESSION["user"]["username"];
                         ?>
                     </p>
                 </div>
@@ -188,19 +188,21 @@ if (!isset($_SESSION["user"])) {
             </div>
         </div>
     </footer>
-    <div class="modal-box hidden bg-slate-100 border-[1px] border-black w-96 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-2xl z-20">
-        <div class="p-4">
-            <h1 class="text-center font-bold text-xl">Change Profile</h1>
-            <input type="text" placeholder="Enter new username..." class="py-2 ps-4 text-xl w-full rounded-xl bg-slate-200 block mt-5">
-            <input type="password" placeholder="Enter new password..." class="py-2 ps-4 text-xl w-full rounded-xl bg-slate-200 block mt-5 mb-5">
-        </div>
-        <hr>
-        <div class="flex justify-center">
-            <button class="p-4 text-blue-500 text-center">
-                SAVE CHANGES
-            </button>
-        </div>
-    </div>
+    <div id="profil2" class="modal-box hidden bg-slate-100 border-[1px] border-black w-96 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-2xl z-20">
+        <form action="../../database/database.php" method="post">
+            <div class="p-4">
+                <h1 class="text-center font-bold text-xl">Change Profile</h1>
+                <input type="text" name="username" placeholder="Enter new username..." class="py-2 ps-4 text-xl w-full rounded-xl bg-slate-200 block mt-5">
+                <input type="password" name="password" placeholder="Enter new password..." class="py-2 ps-4 text-xl w-full rounded-xl bg-slate-200 block mt-5 mb-5">
+            </div>
+            <hr>
+            <div class="flex justify-center">
+                <button type="submit" name="profil" class="p-4 text-blue-500 text-center">
+                    SAVE CHANGES
+                </button>
+            </div>
+            </div>
+        </form>
     <script src="./script.js"></script>
     <!-- FOOTER END -->
 </body>
