@@ -1,0 +1,21 @@
+Options -MultiViews
+RewriteEngine On
+
+# Rewrite untuk admin
+RewriteRule ^admin$ controller/main.php?action=admin [L]
+RewriteRule ^admin/dashboard$ controller/main.php?action=dashboard [L]
+
+# Rewrite untuk customer
+RewriteRule ^login$ controller/main.php?action=customer-login [L]
+RewriteRule ^login/save$ controller/main.php?action=customer-login-save [L]
+RewriteRule ^register$ controller/main.php?action=customer-register [L]
+RewriteRule ^register/save$ controller/main.php?action=customer-register-save [L]
+RewriteRule ^profile$ controller/main.php?action=customer-profile [L]
+RewriteRule ^profile/edited$ controller/main.php?action=customer-profile-edited [L]
+
+# Rewrite untuk halaman lainnya
+RewriteRule ^item/(\d+)$ controller/main.php?action=item&id=$1 [L]
+RewriteRule ^cart$ controller/main.php?action=cart [L]
+RewriteRule ^order/(\d+)$ controller/main.php?action=order&id=$1 [L]
+RewriteRule ^contact$ controller/main.php?action=contact [L]
+RewriteRule ^logout$ controller/main.php?action=logout [L]
